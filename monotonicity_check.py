@@ -1,3 +1,11 @@
+#######################################################################################
+# Usage                                                                               # 
+# Replace: Replace the dictionary f with your actual 18 conditions.                   #
+# Run: Run the script using Python.                                                   #
+# Capture Output: Save the output to a file if needed using command-line redirection. #
+# Example: python monotonicity_check.py > output.txt                                  #
+#######################################################################################
+
 def is_monotonic(f):
     """
     Checks if the given Boolean function f is monotonic.
@@ -19,7 +27,6 @@ def is_less_than(a, b):
             return False
     return True
 
-# Example usage:
 # Example with 18 conditions (replace these with your actual conditions)
 f = {
     '000000': 0,
@@ -27,15 +34,15 @@ f = {
     '000010': 0,
     '000011': 1,
     '000100': 0,
-    '000101': 0,
+    '000101': 1,
     '000110': 1,
     '000111': 1,
     '001000': 0,
     '001001': 0,
     '001010': 1,
     '001011': 1,
-    '001100': 0,
-    '001101': 0,
+    '001100': 1,
+    '001101': 1,
     '001110': 1,
     '001111': 1,
     '010000': 0,
@@ -43,4 +50,4 @@ f = {
     # Add all 18 rows here
 }
 
-print(is_monotonic(f))  # Output should be True or False depending on the function
+print(is_monotonic(f))
